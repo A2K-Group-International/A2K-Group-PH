@@ -1,7 +1,7 @@
-import a2klogo from "/header-logo.svg";
-import facebook from "/facebook.svg";
-import instagram from "/instagram.svg";
-import linkedin from "/linkedin.svg";
+import a2klogo from "../assets/vector/header-logo.svg";
+import facebook from "../assets/vector/facebook.svg";
+import instagram from "../assets/vector/instagram.svg";
+import linkedin from "../assets/vector/linkedin.svg";
 
 const Header = () => {
   let navList = ["About us", "Services", "Academy", "News", "Contact"];
