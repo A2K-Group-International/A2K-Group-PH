@@ -7,7 +7,7 @@ import linkedin from "../assets/vector/linkedin.svg";
 
 const Nav = () => {
   const navItem = [
-    { id: 1, name: "About us" },
+    { id: 1, name: "About Us" },
     { id: 2, name: "Services" },
     { id: 3, name: "Academy" },
     { id: 4, name: "News" },
@@ -46,24 +46,29 @@ const Nav = () => {
             </a>
           ))}
         </div>
-
+        {/* Mobile View */}
         <button className="md:hidden" onClick={toggleNavbar}>
           {isOpen ? (
-            <Icon icon="pajamas:close" />
+            <Icon icon="material-symbols:close" width="40" height="40" />
           ) : (
-            <Icon icon="fluent:navigation-16-filled" />
+            <Icon icon="material-symbols:menu" width="40" height="40" />
           )}
         </button>
       </nav>
       {isOpen && (
-        <ul className="flex basis-full flex-col items-center gap-y-3 md:hidden">
+        <ul className="absolute left-0 w-full border-y-2 border-darkGray/20 bg-white text-2xl font-light md:hidden">
           {navItem.map((item) => (
-            <li key={item.id}>
+            <li
+              className="flex justify-between border-b-2 border-darkGray/30 p-5"
+              key={item.id}
+            >
               <a href="#">{item.name}</a>
+              <span>
+                <Icon icon="ic:baseline-plus" width="24" height="24" />
+              </span>
             </li>
           ))}
-          {/* Social Media Mobile */}
-          <div className="flex gap-x-5">
+          <div className="flex gap-x-5 p-5">
             {socialMediaItem.map((item) => (
               <a href="#" key={item.id}>
                 <img src={item.name} alt="social media" />

@@ -1,5 +1,6 @@
 import Button from "./Button";
 import GoldBG from "../assets/vector/goldbackground.svg";
+import GlassBG from "./GlassBG";
 const Section1 = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-y-3 py-10 text-center">
@@ -13,20 +14,19 @@ const Section1 = () => {
         digitalization, extending its benefits to your people, processes, and
         platforms.
       </p>
-      <div className="flex flex-wrap justify-center gap-5 md:justify-between">
+      <div className="flex flex-wrap justify-center justify-items-center gap-5 md:grid-cols-3">
         <Button name="See what we do" />
         <Button name="Learn with us" />
         <Button name="Work with us" />
       </div>
-      <div
-        className={`absolute top-80 z-[-1] mx-5 overflow-hidden rounded-xl md:top-56`}
-      >
+      <div className="absolute top-80 z-[-1] mx-2 overflow-hidden rounded-xl md:top-56">
         <img
           className="z-0 min-h-[396px] min-w-[100%] object-cover"
           src={GoldBG}
           alt="gold background"
         />
       </div>
+      <GlassBG />
     </section>
   );
 };
