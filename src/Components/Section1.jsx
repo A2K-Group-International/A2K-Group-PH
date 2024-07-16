@@ -1,6 +1,7 @@
 import Button from "./Button";
 import GoldBG from "../assets/vector/goldbackground.svg";
 import GlassBG from "./GlassBG";
+
 const Section1 = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-y-3 py-10 text-center">
