@@ -1,9 +1,10 @@
 import { useTransition, animated } from "@react-spring/web";
 import React, { useState, useEffect } from "react";
-import SoftDevIMG from "../assets/images/Software-Development.png";
-import HardwareDevIMG from "../assets/images/Hardware-Development.jpg";
+import SoftDevIMG from "../assets/images/DSC_0899.jpg";
+import A2KLab from "../assets/images/DSC_0902.jpg";
+import Reception from "../assets/images/DSC_0856.jpg";
 
-const slides = [SoftDevIMG, HardwareDevIMG];
+const slides = [SoftDevIMG, A2KLab, Reception];
 const GlassBG = () => {
   const [index, set] = useState(0);
   const transitions = useTransition(index, {
