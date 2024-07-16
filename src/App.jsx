@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
 import Section1 from "./Components/Section1";
+import Section3 from "./Components/Section3";
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main>
         <Section1 />
+        <Section3 />
       </main>
     </div>
   );
