@@ -56,7 +56,7 @@ const Nav = () => {
         </button>
       </nav>
       {isOpen && (
-        <ul className="absolute left-0 w-full border-y-2 border-darkGray/20 bg-white text-2xl font-light md:hidden">
+        <ul className="absolute left-0 z-[1] w-full border-y-2 border-darkGray/20 bg-white text-2xl font-light md:hidden">
           {navItem.map((item) => (
             <li
               className="flex justify-between border-b-2 border-darkGray/30 p-5"
