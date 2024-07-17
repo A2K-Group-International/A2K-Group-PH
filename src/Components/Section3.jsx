@@ -1,6 +1,3 @@
-import Button from "./Button";
-import GoldBG from "../assets/vector/goldbackground.svg";
-import GlassBG from "./GlassBG";
 import ImportIcon from "./ImportIcon";
 const Section3 = () => {
   return (
