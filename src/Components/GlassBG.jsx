@@ -11,7 +11,7 @@ const GlassBG = () => {
     key: index,
     from: { opacity: 0 },
     enter: { opacity: 1 },
-    leave: { opacity: 0 },
+    leave: { opacity: 0.1 },
     config: { duration: 3000 },
     onRest: (_a, _b, item) => {
       if (index === item) {
@@ -29,6 +29,7 @@ const GlassBG = () => {
           style={{
             ...style,
             backgroundImage: `url(${slides[i]})`,
+            backgroundSize: "cover",
           }}
         />
       ))}

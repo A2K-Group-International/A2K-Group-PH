@@ -16,11 +16,11 @@ const Section1 = () => {
         platforms.
       </p>
       <div className="flex flex-wrap justify-center justify-items-center gap-5 md:grid-cols-3">
-        <Button name="See what we do" />
-        <Button name="Learn with us" />
-        <Button name="Work with us" />
+        <Button name="See what we do" link="#" />
+        <Button name="Learn with us" link="#" />
+        <Button name="Work with us" link="#" />
       </div>
-      <div className="absolute top-80 z-[-1] mx-2 overflow-hidden rounded-xl md:top-56">
+      <div className="absolute top-80 z-[-1] mx-2 max-w-full overflow-hidden rounded-xl md:top-56">
         <img
           className="z-0 min-h-[396px] min-w-[100%] object-cover"
           src={GoldBG}

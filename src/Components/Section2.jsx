@@ -6,11 +6,11 @@ import KasamaEnterprise from "../assets/vector/kasama-enterprise.svg";
 
 const Section2 = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center gap-y-6 text-center">
+    <section className="flex flex-col items-center justify-center gap-y-6 text-center">
       <h2 className="text-lg font-semibold">
         OUR SPECIALIZED DIVISIONS / SUBSIDIARIES
       </h2>
-      <div className="flex flex-wrap justify-center gap-x-10">
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-5">
         <Divisions
           image={AngadDigitalEngineering}
           text="Developing app and hardware solutions for organizations for unmet digitization needs."
@@ -24,12 +24,14 @@ const Section2 = () => {
           text="Funding innovation through competitions and collaborations."
         />
       </div>
-      <img
-        className="absolute left-1/2 top-[-10rem] z-[-3] -translate-x-1/2 transform object-cover"
-        src={GrayBG}
-        alt="Gray Background"
-      />
-    </div>
+      <div className="absolute top-[46rem] z-[-3] mx-2 max-w-[952px] overflow-hidden rounded-xl md:top-[40rem]">
+        <img
+          className="min-h-[1400px] min-w-full object-cover"
+          src={GrayBG}
+          alt="Gray Background"
+        />
+      </div>
+    </section>
   );
 };
 export default Section2;
