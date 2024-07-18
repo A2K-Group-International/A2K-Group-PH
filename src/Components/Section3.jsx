@@ -29,7 +29,7 @@ const Section3 = () => {
           </p>
         </div>
       </div>
-      <div className="absolute top-[-46rem] z-[-3] mx-2 max-w-[952px] overflow-hidden rounded-xl md:top-[40rem]">
+      <div className="absolute bottom-0 z-[-3] mx-2 max-w-[952px] overflow-hidden rounded-xl md:top-[40rem]">
         <img
           className="min-h-[1400px] min-w-full object-cover"
           src={RotatedGrayBG}
