@@ -6,7 +6,7 @@ const Divisions = ({ image, text }) => {
         src={image}
         alt="Division Image"
       />
-      <p className="mt-2 text-[12px]">{text}</p>
+      <p className="mt-2 text-[12px] md:text-justify">{text}</p>
     </div>
   );
 };

@@ -20,9 +20,9 @@ const GlassBG = () => {
     <img
       src={slide}
       key={key}
-      alt=""
+      alt="image-slider"
       className={
-        "cover absolute size-full h-full w-full transition duration-1000 " +
+        "absolute size-full h-full w-full object-cover transition duration-1000 " +
         (index == key ? "opacity-100 delay-500" : "opacity-0")
       }
     />
