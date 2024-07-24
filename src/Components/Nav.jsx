@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Icon } from "@iconify/react";
 import Logo from "./Logo";
 
-import { navItem, socialMediaItem } from "./data";
+import { navItem, socialMediaItem } from "../utils/data";
 
 const Nav = () => {
   const lineAnimation =

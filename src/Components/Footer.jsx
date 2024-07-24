@@ -1,4 +1,4 @@
-import { navItem, socialMediaItem } from "./data";
+import { navItem, socialMediaItem } from "../utils/data";
 import Button from "./Button";
 import A2KLogo from "../assets/vector/header-logo.svg";
 const Footer = () => {
